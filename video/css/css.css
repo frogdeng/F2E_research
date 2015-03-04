@@ -1,0 +1,104 @@
+
+
+.clear{
+	clear: both;
+}
+.a1,.a2,.a3{
+	width: 150px;
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	background: #555;
+	margin-right: 5px;
+		
+}
+
+
+.a1:hover ~ .go1,
+.a2:hover ~ .go2,
+.a3:hover ~ .go3
+
+{
+	transition: opacity .5s;
+	display: block;
+	height: 500px;
+	opacity: .3w;
+
+
+}
+
+
+
+
+
+
+.go1{
+	background: #456;
+	height: 400px;
+	
+	
+}
+.go2{
+	background: #c9c9c9;
+	height: 400px;
+	display: none;
+
+
+}
+.go3{
+	background: #789;
+	height: 400px;
+	display: none;
+
+}
+
+
+
+
+
+
+.tabs input.tab-selector-1:checked ~ .content .content-1,
+.tabs input.tab-selector-2:checked ~ .content .content-2,
+.tabs input.tab-selector-3:checked ~ .content .content-3{
+	display: block;
+	z-index: 100;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    color: #00addc;
+    border-top: 1px solid #e2e2e2;
+    font-size: 13px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.xxx{
+
+	border:1px solid #fbb040;
+	border-radius: 5px;
+
+	width: 400px;
+	font-size: 13px;
+	padding: 7px;
+	line-height: 15px;
+
+
+
+
+}
+
+
+
+
+
+
+

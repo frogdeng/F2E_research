@@ -1,0 +1,25 @@
+@import compass
+@import compass/css3
+@import variable
+@import mixin
+@import reset
+@import extend
+@import animation
+@import susy 
+
+
+
+
+
+.saturn
+	position: absolute
+	left: 315px
+	top: 143px
+
+
+	@keyframes myOrbit
+    	from
+    		transform: rotate(0deg) translateX(150px) rotate(0deg)
+    	to
+    		transform: rotate(360deg) translateX(150px) rotate(-360deg)
+}

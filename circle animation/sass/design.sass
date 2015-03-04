@@ -1,0 +1,303 @@
+@import compass
+@import compass/css3
+@import variable
+@import mixin
+@import reset
+@import extend
+@import animation
+@import susy 
+
+
+body
+	overflow-x: hidden 	
+
+//basic setup
+$base-font-size:16px
+$base-line-height:24px
+@include establish-baseline()
+
+
+$total-columns: 12 //欄位數量  
+$column-width: 74px //欄位寬度  
+$gutter-width: 12px //欄位與欄位間的間距  
+$grid-padding: 0px //格線最外圍左右邊的間距  
+
+$pc : 950px 12 
+$tablet :950px  8 550px
+$mobile: 6 550px 
+
+$font_h3: 23px
+$h3_color: #b81a35
+
+
+$KK_color: #019fc4
+
+/*==[header]==*/
+.clear
+	clear: both
+
+
+
+.KK_wrapper
+	width: 100%
+	height: 900px
+	background-image: url("../img/2.jpg")
+	// background-color: #c0c0c0
+
+	
+
+.KK_header
+	width: 100%
+	height: 60px
+	background: rgba(7, 163, 201, .7)
+	position: relative
+
+	.logo
+		+at-breakpoint($mobile)  
+			+container
+			position: absolute
+			left: 10%
+			top: 10px
+		
+		+at-breakpoint($tablet)  
+			+container
+			position: absolute
+			left: 20%
+			top: 10px
+
+		+at-breakpoint($pc)  
+			+container
+			position: absolute
+			left: 30%
+			top: 10px
+
+	.language
+		+at-breakpoint($mobile)  
+			+container
+			position: absolute
+			right: 10%
+			top: 15px
+			font-size: 13px
+			padding: 3px 13px
+			background-color: #014a5a
+			border-radius: 20px
+			color: #FFF
+		
+		+at-breakpoint($tablet)  
+			+container
+			position: absolute
+			right: 20%
+			top: 15px
+			font-size: 13px
+			padding: 3px 13px
+			background-color: #014a5a
+			border-radius: 20px
+			color: #FFF
+
+		+at-breakpoint($pc)  
+			+container
+			position: absolute
+			right: 30%
+			top: 15px
+			font-size: 13px
+			padding: 3px 13px
+			background-color: #014a5a
+			border-radius: 20px
+			color: #FFF
+
+
+
+
+
+.kk_banner
+	+at-breakpoint($mobile)  
+		+container
+		//+susy-grid-background
+		width: 90%
+		height: 80px
+		margin: 0 auto
+		text-align: center
+		background-color: #959595
+		margin-top: 50px
+		line-height: 80px
+		color: #FFF
+		font-size: 30px
+		border-radius: 5px
+
+
+	+at-breakpoint($tablet)  
+		+container
+		//+susy-grid-background
+		width: 60%
+		height: 80px
+		margin: 0 auto
+		text-align: center
+		background-color: #959595
+		margin-top: 50px
+		line-height: 80px
+		color: #FFF
+		font-size: 30px
+		border-radius: 5px
+	
+
+	+at-breakpoint($pc)  
+		+container
+		//+susy-grid-background
+		width: 40%
+		height: 80px
+		margin: 0 auto
+		text-align: center
+		background-color: #959595
+		margin-top: 50px
+		line-height: 80px
+		color: #FFF
+		font-size: 30px
+		border-radius: 5px
+	
+
+
+
+
+.kk_contant
+	+at-breakpoint($mobile)  
+		+container
+		width: 90%
+		margin-top: 20px
+		border-radius: 10px
+		border: 5px solid rgba(255, 255, 255, .4)
+
+	+at-breakpoint($tablet)  
+		+container
+		width: 60%
+		margin-top: 20px
+		border-radius: 10px
+		border: 5px solid rgba(255, 255, 255, .4)
+
+	+at-breakpoint($pc)  
+		+container			
+		width: 40%
+		margin-top: 20px
+		border-radius: 10px
+		border: 5px solid rgba(255, 255, 255, .4)
+
+	input
+		+at-breakpoint($mobile)  
+			+container
+			width: 100%
+			height: 40px
+			margin: 0 auto
+			border-radius: 5px
+			margin-bottom: 20px
+			padding-left: 50px
+			border: 1px solid #eaeaea
+			+box-sizing(border-box)
+
+		+at-breakpoint($tablet)  
+			+container
+			width: 100%
+			height: 40px
+			margin: 0 auto
+			border-radius: 5px
+			margin-bottom: 20px
+			padding-left: 50px
+			border: 1px solid #eaeaea
+			+box-sizing(border-box)
+
+		+at-breakpoint($pc)  
+			+container	
+			width: 100%
+			height: 40px
+			margin: 0 auto
+			border-radius: 5px
+			margin-bottom: 20px
+			border: 1px solid #eaeaea
+			padding-left: 50px
+			+box-sizing(border-box)
+		
+
+
+
+	.popo
+		background-color: #FFF
+		padding-bottom: 30px
+		border-radius: 4px
+
+		.submit
+			width: 90%
+			height: 46px
+			margin: 0 auto
+			background-color: #01addd
+			text-align: center
+			color: #FFF
+			line-height: 46px
+			border-radius: 5px
+			font-size: 20px
+
+
+
+.a1
+	width: 90%
+	margin: 0 auto
+
+.aa
+	background-image: url("../img/3_11.jpg")
+	background-repeat: no-repeat
+	background-position: 10px 5px
+	border: 1px solid #555
+
+
+.bb
+	background-image: url("../img/3_14.jpg")
+	background-repeat: no-repeat
+	background-position: 10px 5px
+
+
+.welcome
+	font-size: 25px
+	text-align: center
+	padding-top: 30px
+	color: #666
+
+
+.create
+	width: 90%
+	margin: 0 auto
+	color: #666
+	font-size: 13px
+	margin-top: 35px
+	margin-bottom: 10px
+	input
+		width: 15px
+		height: 15px
+		float: left
+		margin-top: 4px
+		margin-right: 5px
+
+
+.remember
+	float: left
+	color: #666
+	font-size: 13px
+	margin-top: 5px
+	margin-bottom: 10px
+	padding-left: 20px
+	margin-left: 10px
+	input
+		width: 15px
+		height: 15px
+		float: left
+		margin-top: 4px
+		margin-right: 5px
+
+
+.forget
+	float: right
+	text-align: right
+	padding-right: 10px
+	margin-right: 10px
+	a
+		color: $KK_color
+		font-size: 13px	
+
+
+

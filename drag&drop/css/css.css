@@ -1,0 +1,30 @@
+body{
+	background: #eee;
+}
+.drag {
+  background: #94defa;
+  width: 300px;
+  height: 40px;
+  z-index: 100;
+/*  cursor: pointer;
+*/
+  position: relative;
+}
+
+.drag:active{
+	background: #6fc4e4
+}
+
+
+.opps{
+	position: absolute;
+  	width: 300px;
+	height: 200px;
+	background-color: #999;
+	top: 45px;
+	left: 0px;
+	}
+
+
+
+

@@ -1,0 +1,121 @@
+
+/*全域 box-sizing */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+.clear{
+	clear:both;
+}
+
+
+.element{
+	width: 400px;
+	height: 400px;
+	background: #789;
+	margin: 0 auto;
+	position: relative;
+	
+	
+}
+
+
+.element::before {
+	content:"GO";
+	position: absolute;
+	z-index: 1;
+	top: -50px;
+  	left: -50px;
+	width: 150px;
+	height: 150px;
+	background: #555;
+	font-size: 13px;
+	color: #FFF;
+	padding: 15px;
+
+}
+
+.element::after {
+	content:" 哈哈哈哈";
+	position: absolute;
+	z-index: 1;
+	right: -10px;
+  	bottom: -10px;
+	width: 170px;
+	height: 170px;
+	background: #900;
+	color: #FFF;
+	font-size: 13px;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 150px;
+	/*padding: 20px;*/
+}
+
+
+
+
+.example{
+	width: 600px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #555;
+	line-height: 23px;
+
+}
+
+ .tooltip a {
+ 	position: relative;
+ 	color: #954;
+ }
+
+.tooltip a::before {
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #abcdef;
+    position: absolute;
+    left: 0%;
+    bottom: 90%;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    margin:0 0 20px 15px;
+    transition: all 0.4s ease;
+}
+.tooltip a::after {
+    content: attr(data-tooltip);
+    border-radius: 5px;
+    background: #abcdef;
+    color: #000;
+    position: absolute;
+    left: 0%;
+    bottom: 180%;
+    white-space: nowrap;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.tooltip a:hover::before {bottom: 5%;}
+.tooltip a:hover::after {bottom: 90%;}
+.tooltip a:hover::after, .tooltip a:hover::before {opacity: 1;}
+
+
+
+
+
+
+
+
+.clear::before, .clear::after {
+        content: "";
+        display: table;
+    }
+ .clear::after {
+        clear: both;
+    }
+
+
+

@@ -1,0 +1,92 @@
+body{
+	background: #222
+}
+
+
+
+.papa{
+ 	width: 300px;
+ 	margin: 0 auto;
+	fill: none;
+	transition: .3s all;
+
+}
+.papa:hover{
+	width: 350px;
+}
+
+
+
+.papaha{
+  display: block;
+  width: 100%;
+  height: 500px;
+  background: url(KKBOX_logo.svg);
+  background-repeat: no-repeat;
+  background-size: 100px 82px;
+  transition: .3s all;
+
+}
+/*.papaha:hover{
+	background-size: 100px 82px;
+	background: url(KKBOX_logo2.svg);
+	background-repeat: no-repeat;
+	-ms-transform: rotate(30deg); 
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+
+}
+*/
+
+
+
+
+
+@-webkit-keyframes rotate {
+    from {
+    	-webkit-transform: rotate(0deg);
+    }
+    to {
+    	-webkit-transform: rotate(360deg);
+    }
+} 
+
+
+.pos{
+	-webkit-transform: translate(82px, 82px);
+}
+
+
+.kkk{
+	fill: orange;
+	 transition: 1s all;
+
+}
+
+
+.kkk:hover{
+	filter: url(#pictureFilter);
+	fill: pink;
+
+}
+
+
+.circle1{
+	background-repeat: no-repeat;
+	transform-origin: 50% 50%;
+	-webkit-transition: all .5s;
+	-webkit-animation: rotate 1s infinite linear;
+}
+
+.aa{
+	
+	-webkit-animation: rotate 1s infinite linear;
+}
+
+
+
+
+
+
+
+
